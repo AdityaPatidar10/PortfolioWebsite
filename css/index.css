@@ -1,0 +1,23 @@
+#navigation_bar {
+  margin: 0px;
+  padding: 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgb(119, 183, 23);
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav_element {
+  font-size: 80%;
+  display: inline;
+  list-style-type: none;
+  margin: 0px 5px;
+}
