@@ -13,8 +13,11 @@ header {
 }
 #dino {
   height: 35px;
+  margin-left: 10px;
 }
 .logo_container a {
+  display: flex;
+  align-items: center;
   color: white;
   font-size: 40px;
   text-decoration: none;
