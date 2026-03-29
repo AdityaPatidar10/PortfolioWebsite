@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <body>
@@ -21,79 +23,113 @@
       <div class="logo_container">
         <a class="logo_text" href="https://www.adityapatidar.me"
           >Aditya
-          <img id="dino" src="img/dino_logo.png" alt="" />
+          <span id="braces_logo" class="material-symbols-outlined">
+            data_object
+          </span>
         </a>
       </div>
       <div class="navigation_items">
         <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#home"><span>Home</span></a>
+          <a href="#about"><span>About</span></a>
+          <a href="#projects"><span>Projects</span></a>
+          <a href="#contact"><span>Contact</span></a>
         </nav>
       </div>
     </header>
     <main>
-      <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hi! I'm Aditya Patidar, a passionate developer and designer.</p>
-      </section>
-
-      <section id="about">
-        <h2>About Me</h2>
-        <img src="img/profile_pic.png" alt="Profile Picture" />
-        <p>
-          I have experience in web development, UI/UX design, and software
-          engineering. I enjoy creating innovative solutions and learning new
-          technologies.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
+      <div>
+        <div class="container"></div>
         <div>
-          <h3>Portfolio Website</h3>
-          <p>A responsive portfolio website showcasing my work and skills.</p>
-          <img src="img/portfolio.png" alt="Screenshot of Portfolio Website" />
-        </div>
+          <section id="home">
+            <div id="home_text">
+              <h2 id="heading_home">
+                Hi, I'm <span id="name">Aditya Patidar</span>
+              </h2>
+              <p class="typewriter">Software Engineer & UI/UX Designer.</p>
+              <button
+                id="resume_button"
+                href="assets/aditya_Patidar_Resume.pdf"
+                download
+              >
+                Resume<span
+                  id="download_icon"
+                  class="material-symbols-outlined"
+                >
+                  download
+                </span>
+              </button>
+            </div>
+            <img
+              id="profile_pic"
+              src="img/profile.jpeg"
+              alt="Profile Picture"
+            />
+          </section>
 
-        <div>
-          <h3>Project 2</h3>
-          <p>This is Project 2</p>
-          <img src="img/project2.png" alt="Screenshot of Project 2" />
-        </div>
+          <section id="about">
+            <h2>About Me</h2>
+            <p>
+              I have experience in web development, UI/UX design, and software
+              engineering. I enjoy creating innovative solutions and learning
+              new technologies.
+            </p>
+          </section>
 
-        <div>
-          <h3>Project 3</h3>
-          <p>This is Project 3</p>
-          <img src="img/project3.png" alt="Screenshot of Project 3" />
-        </div>
-      </section>
+          <section id="projects">
+            <h2>Projects</h2>
+            <div>
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive portfolio website showcasing my work and skills.
+              </p>
+              <img
+                src="img/portfolio.png"
+                alt="Screenshot of Portfolio Website"
+              />
+            </div>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div>
-          <h3>HTML/CSS</h3>
-          <p>
-            Proficient in creating responsive and visually appealing web pages.
-          </p>
-          <img src="img/html_css.png" alt="logo of html and css" />
-        </div>
-        <div>
-          <h3>JavaScript</h3>
-          <p>
-            Experienced in building interactive and dynamic web applications.
-          </p>
-          <img src="img/javascript.png" alt="logo of javascript" />
-        </div>
-        <div>
-          <h3>Python</h3>
-          <p>Skilled in developing efficient and scalable backend solutions.</p>
-          <img src="img/python.png" alt="logo of python" />
-        </div>
-      </section>
+            <div>
+              <h3>Project 2</h3>
+              <p>This is Project 2</p>
+              <img src="img/project2.png" alt="Screenshot of Project 2" />
+            </div>
 
-      <!-- <section id="certifications">
+            <div>
+              <h3>Project 3</h3>
+              <p>This is Project 3</p>
+              <img src="img/project3.png" alt="Screenshot of Project 3" />
+            </div>
+          </section>
+
+          <section id="skills">
+            <h2>Skills</h2>
+            <div>
+              <h3>HTML/CSS</h3>
+              <p>
+                Proficient in creating responsive and visually appealing web
+                pages.
+              </p>
+              <img src="img/html_css.png" alt="logo of html and css" />
+            </div>
+            <div>
+              <h3>JavaScript</h3>
+              <p>
+                Experienced in building interactive and dynamic web
+                applications.
+              </p>
+              <img src="img/javascript.png" alt="logo of javascript" />
+            </div>
+            <div>
+              <h3>Python</h3>
+              <p>
+                Skilled in developing efficient and scalable backend solutions.
+              </p>
+              <img src="img/python.png" alt="logo of python" />
+            </div>
+          </section>
+
+          <!-- <section id="certifications">
         <h2>Certifications</h2>
         <div>
           <h3>Certification 1</h3>
@@ -126,6 +162,8 @@
           />
         </div>
       </section> -->
+        </div>
+      </div>
     </main>
     <footer>
       <section id="contact">
