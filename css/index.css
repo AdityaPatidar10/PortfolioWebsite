@@ -1,4 +1,5 @@
 * {
+  scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
   font-family: "Pixelify Sans", sans-serif;
@@ -159,15 +160,15 @@ header {
 }
 
 section {
-  padding: 40px;
+  padding: 0px 40px 0px 40px;
 }
 #name {
   color: #24d29b;
 }
 #profile_pic {
   z-index: 10;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   border: 4px solid rgb(255, 255, 255);
   box-shadow: 10px 10px 0px #9dacc4;
   transition:
@@ -179,7 +180,7 @@ section {
   box-shadow: 14px 14px 0px #9dacc4;
 }
 #home {
-  padding-top: 200px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -187,17 +188,32 @@ section {
 #home_text {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 20px;
 
   position: relative;
   top: 0px;
 }
 h2 {
-  font-size: 45px;
+  font-size: 60px;
 }
 #home_text p {
   margin-top: 20px;
+}
+
+#about {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.about_div {
+  display: flex;
+}
+
+.about_div p {
+  text-align: center;
 }
 
 .container {
